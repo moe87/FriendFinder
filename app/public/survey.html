@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder - Survey</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1 class="text-center">
+        <span class="fa fa-fire"></span>Friend Finder</h1>
+      <hr>
+      <h2 class="text-center">Answer the questions to find a friend!!!</h2>
+      <br>
+      <div class="text-center">
+        <a href="/">
+          <button class="btn btn-lg btn-default">
+            <span class="fa fa-home"></span>
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- Reservation Page -->
+        <div class="card">
+          <div class="card-header">
+            Survey
+          </div>
+          <div class="card-body">
+            <form id="friendFinderForm" role="form">
+              <div class="form-group">
+                <label for="name">Name (Required)</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <div class="form-group">
+                <label for="image">Link to Photo Image (Required)</label>
+                <input type="text" class="form-control" id="image">
+              </div>
+              <div class="form-group">
+                <p><label for="q1">Your mind is always buzzing with unexplored ideas and plans.</label></p>
+                <label class="radio-inline"><input type="radio" name="q1" value="1">1 (Strongly Disagree)</label>
+                <label class="radio-inline"><input type="radio" name="q1" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q1" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q1" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q1" value="5">5 (Strongly Agree)</label>
+              </div>
+              <div class="form-group">
+                <p><label for="q2">Generally speaking, you rely more on your experience than your imagination.</label></p>
+                <label class="radio-inline"><input type="radio" name="q2" value="1">1 (Strongly Disagree)</label>
+                <label class="radio-inline"><input type="radio" name="q2" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q2" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q2" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q2" value="5">5 (Strongly Agree)</label>
+              </div>
+              <div class="form-group">
+                <p><label for="q3">You find it easy to stay relaxed and focused even when there is some pressure.</label></p>
+                <label class="radio-inline"><input type="radio" name="q3" value="1">1 (Strongly Disagree)</label>
+                <label class="radio-inline"><input type="radio" name="q3" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q3" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q3" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q3" value="5">5 (Strongly Agree)</label>
+              </div>
+              <div class="form-group">
+                <p><label for="q4">You rarely do something just out of sheer curiosity.</label></p>
+                <label class="radio-inline"><input type="radio" name="q4" value="1">1 (Strongly Disagree)</label>
+                <label class="radio-inline"><input type="radio" name="q4" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q4" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q4" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q4" value="5">5 (Strongly Agree)</label>
+              </div>
+              <div class="form-group">
+                <p><label for="q5">People can rarely upset you.</label></p>
+                <label class="radio-inline"><input type="radio" name="q5" value="1">1 (Strongly Disagree)</label>
+                <label class="radio-inline"><input type="radio" name="q5" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q5" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q5" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q5" value="5">5 (Strongly Agree)</label>
+              </div>
+              <div class="form-group">
+                <p><label for="q6">It is often difficult for you to relate to other people’s feelings.</label></p>
+                <label class="radio-inline"><input type="radio" name="q6" value="1">1 (Strongly Disagree)</label>
+                <label class="radio-inline"><input type="radio" name="q6" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q6" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q6" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q6" value="5">5 (Strongly Agree)</label>
+              </div>
+              <div class="form-group">
+                <p><label for="q7">In a discussion, truth should be more important than people’s sensitivities.</label></p>
+                <label class="radio-inline"><input type="radio" name="q7" value="1">1 (Strongly Disagree)</label>
+                <label class="radio-inline"><input type="radio" name="q7" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q7" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q7" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q7" value="5">5 (Strongly Agree)</label>
+              </div>
+              <div class="form-group">
+                <p><label for="q8">You rarely get carried away by fantasies and ideas.</label></p>
+                <label class="radio-inline"><input type="radio" name="q8" value="1">1 (Strongly Disagree)</label>
+                <label class="radio-inline"><input type="radio" name="q8" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q8" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q8" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q8" value="5">5 (Strongly Agree)</label>
+              </div>
+              <div class="form-group">
+                <p><label for="q9">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label></p>
+                <label class="radio-inline"><input type="radio" name="q9" value="1">1 (Strongly Disagree)</label>
+                <label class="radio-inline"><input type="radio" name="q9" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q9" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q9" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q9" value="5">5 (Strongly Agree)</label>
+              </div>
+              <div class="form-group">
+                <p><label for="q10">You feel more energetic after spending time with a group of people.</label></p>
+                <label class="radio-inline"><input type="radio" name="q10" value="1">1 (Strongly Disagree)</label>
+                <label class="radio-inline"><input type="radio" name="q10" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q10" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q10" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q10" value="5">5 (Strongly Agree)</label>
+              </div>
+              <button type="submit" class="btn btn-primary submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal" tabindex="-1" role="dialog" id="matchedModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Matched!!!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p id="modal-name"></p>
+            <img id="modal-image" src=""/>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          Copy right
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
+
+
+<script type="text/javascript">
+  $(".submit").on("click", function(event) {
+    event.preventDefault();
+
+    var isRadioChecked = true;
+    for(var i = 1; i <= 10; i++) {
+      if($("input[name='q"+i+"']:checked"). val() == undefined) {
+        isRadioChecked = false;
+      }
+    }
+
+    if($("#name").val().trim() == '' || $("#image").val().trim() == '' || !isRadioChecked) {
+      alert("Enter all fields!!!");
+    } else {
+      var scores = [
+        $("input[name='q1']:checked"). val(),
+        $("input[name='q2']:checked"). val(),
+        $("input[name='q3']:checked"). val(),
+        $("input[name='q4']:checked"). val(),
+        $("input[name='q5']:checked"). val(),
+        $("input[name='q6']:checked"). val(),
+        $("input[name='q7']:checked"). val(),
+        $("input[name='q8']:checked"). val(),
+        $("input[name='q9']:checked"). val(),
+        $("input[name='q10']:checked"). val()
+      ];
+
+      // Here we grab the form elements
+      var surveyData = {
+        name: $("#name").val().trim(),
+        photo: $("#image").val().trim(),
+        scores: scores
+      };
+
+      $.post("/api/survey", surveyData, function(data) {
+        $("#modal-name").text(data.name);
+        $("#modal-image").attr('src', data.photo);
+        $("#matchedModal").modal('show');
+      });
+	
+      $("#friendFinderForm").find('input:text, input:password, input:file, select, textarea').val('');
+      $("#friendFinderForm").find('input:radio, input:checkbox').removeAttr('checked').removeAttr('selected');
+    }
+  });
+
+</script>
